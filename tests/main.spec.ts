@@ -16,9 +16,9 @@ describe('characterisation testing', () => {
         expect(result).toBe(expectedResult)
     })
 
-    it('what happens with empty strings?', () => {
+    it('should do nothing for an empty string', () => {
         let emptyString = '';
-        let expectedResult = "we don't know";
+        let expectedResult = emptyString;
 
         const result: string = idothings(emptyString);
 
