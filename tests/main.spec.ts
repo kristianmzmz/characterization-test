@@ -15,4 +15,14 @@ describe('characterisation testing', () => {
 
         expect(result).toBe(expectedResult)
     })
+
+    it('what happens with empty strings?', () => {
+        let emptyString = '';
+        let expectedResult = "we don't know";
+
+        const result: string = idothings(emptyString);
+
+        expect(result).toBe(expectedResult)
+    })
+
 })
