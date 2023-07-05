@@ -25,4 +25,12 @@ describe('characterisation testing', () => {
         expect(result).toBe(expectedResult)
     })
 
+    it('what will happen with the chevron', () => {
+        let stringWithChevron = '<hello world';
+
+        const result: string = idothings(stringWithChevron);
+
+        expect(result).toBe("I don't know what I'm doing")
+    })
+
 })
